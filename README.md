@@ -16,8 +16,12 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
   - reviewing code
 
 - Gonzalo Martin (Developer) is responsible for:
-  -
-  -
+  - Designing and implementing front-end user interfaces and back-end application features.
+  - Implementing search, filtering, and personalized activity/itinerary planning logic based on user preferences.
+  - Writing clean, maintainable, and well-documented code following team coding standards.
+  - Collaborating with the Product Owner and Scrum Master to refine project requirements and acceptance criteria.
+  - Developing and integrating features for points of interest (monuments, museums, parks, cultural, and sports venues).
+
 
 ## Communication Strategy
 We'll use a WhatsApp group chat for everyday communication, and video calls for our discussions and working sessions.
