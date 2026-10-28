@@ -6,7 +6,7 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
   -
   -
   
-- Ilies Guerda (Scrum Master and Developer) is responsible for:
+**- Ilies Guerda (Scrum Master and Developer) is responsible for:**
   - making sure that communication works
   - making sure that we organize retrospectives
   - making sure that Scrum practices are followed
