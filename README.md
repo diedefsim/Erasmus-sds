@@ -3,7 +3,10 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
 
 ## Roles and Responsabilities
 - Diego de Francisco (Product Owner) is responsible for:
-  - ee
+  - Backlog Management: Prioritize, refine, and maintain user stories and features.
+  - Developing and communicating Product Goal
+  - Defining acceptance criteria (Definition of Done)
+  - Review and approve completed sprint increments
 
 - Ilies Guerda (Scrum Master & Developer) is responsible for:
   - making sure that communication works
