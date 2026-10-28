@@ -3,10 +3,9 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
 
 ## Roles and Responsabilities
 - Diego de Francisco (Product Owner) is responsible for:
-  -
-  -
-  
-**- Ilies Guerda (Scrum Master and Developer) is responsible for:**
+  - ee
+
+- Ilies Guerda (Scrum Master & Developer) is responsible for:
   - making sure that communication works
   - making sure that we organize retrospectives
   - making sure that Scrum practices are followed
