@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Poznań Town Hall (Ratusz) & Old Market Square",
+    "description": "Renaissance town hall famous for its mechanical Billy Goats that butt heads every day at noon.",
+    "website": "https://mnp.art.pl",
+    "duration_outside": 30,
+    "duration_inside": 60,
+    "importance": 100,
+    "categories": ["historical", "culture", "adults", "children"]
+  },
+  {
+    "id": 2,
+    "name": "Cathedral Basilica of St. Peter and St. Paul (Ostrów Tumski)",
+    "description": "One of the oldest churches in Poland and the burial place of the first Polish rulers on Cathedral Island.",
+    "website": "https://katedra.archpoznan.pl",
+    "duration_outside": 30,
+    "duration_inside": 45,
+    "importance": 95,
+    "categories": ["historical", "culture", "adults"]
+  },
+  {
+    "id": 3,
+    "name": "Brama Poznania ICHOT (Interactive Heritage Center)",
+    "description": "Modern interactive museum presenting the history of Cathedral Island with multimedia exhibits.",
+    "website": "https://bramapoznania.pl",
+    "duration_outside": 20,
+    "duration_inside": 90,
+    "importance": 90,
+    "categories": ["modern", "historical", "culture", "children", "adults"]
+  },
+  {
+    "id": 4,
+    "name": "Stary Browar (Old Brewery Art & Business Center)",
+    "description": "Award-winning shopping and art gallery center built inside a revitalized 19th-century brewery.",
+    "website": "https://starybrowar5050.com",
+    "duration_outside": 20,
+    "duration_inside": 70,
+    "importance": 88,
+    "categories": ["modern", "art", "culture", "adults"]
+  },
+  {
+    "id": 5,
+    "name": "Rogalowe Muzeum Poznania (Croissant Museum)",
+    "description": "Live interactive show where visitors help bake traditional St. Martin croissants and learn local dialect.",
+    "website": "https://rogalowemuzeum.pl",
+    "duration_outside": 10,
+    "duration_inside": 60,
+    "importance": 85,
+    "categories": ["culture", "historical", "children", "adults"]
+  },
+  {
+    "id": 6,
+    "name": "Cytadela Park & Open-Air Sculptures",
+    "description": "Huge green park on the site of a former fortress featuring walking paths, bike lanes, and Magdalena Abakanowicz sculptures.",
+    "website": "https://poznan.travel",
+    "duration_outside": 120,
+    "duration_inside": 30,
+    "importance": 82,
+    "categories": ["park", "art", "historical", "sport", "bike", "children", "adults"]
+  },
+  {
+    "id": 7,
+    "name": "National Museum in Poznań (Muzeum Narodowe)",
+    "description": "Major art museum housing Polish and European paintings, including works by Claude Monet and Jan Matejko.",
+    "website": "https://mnp.art.pl",
+    "duration_outside": 15,
+    "duration_inside": 90,
+    "importance": 80,
+    "categories": ["art", "culture", "historical", "adults"]
+  },
+  {
+    "id": 8,
+    "name": "Lake Malta & Malta Ski Recreational Area",
+    "description": "Scenic artificial lake ideal for cycling, rowing events, sports activities, and family walks.",
+    "website": "https://malta.poznan.pl",
+    "duration_outside": 120,
+    "duration_inside": 0,
+    "importance": 78,
+    "categories": ["sport", "bike", "park", "children", "adults"]
+  },
+  {
+    "id": 9,
+    "name": "Imperial Castle (CK Zamek Cultural Centre)",
+    "description": "Monumental palace built in 1910 for Emperor William II, now hosting exhibitions, cinema, and concerts.",
+    "website": "https://ckzamek.pl",
+    "duration_outside": 30,
+    "duration_inside": 60,
+    "importance": 75,
+    "categories": ["historical", "culture", "art", "music", "adults"]
+  },
+  {
+    "id": 10,
+    "name": "Poznań Palm House (Palmiarnia Poznańska)",
+    "description": "One of the largest botanical glasshouses in Europe with exotic plants, aquariums, and surrounding Wilson Park.",
+    "website": "https://palmiarnia.poznan.pl",
+    "duration_outside": 30,
+    "duration_inside": 75,
+    "importance": 72,
+    "categories": ["park", "children", "adults"]
+  },
+  {
+    "id": 11,
+    "name": "Bałtyk Tower & Przystań Sztuki",
+    "description": "Iconic modern stepped skyscraper designed by MVRDV, surrounded by a vibrant urban square.",
+    "website": "https://baltykpoznan.pl",
+    "duration_outside": 30,
+    "duration_inside": 15,
+    "importance": 70,
+    "categories": ["modern", "art", "adults"]
+  },
+  {
+    "id": 12,
+    "name": "Śródka District & 3D Mural 'A Tale of Śródka'",
+    "description": "Charming historic neighborhood famous for its giant 3D street art mural and cozy cafes.",
+    "website": "https://poznan.travel",
+    "duration_outside": 45,
+    "duration_inside": 0,
+    "importance": 68,
+    "categories": ["art", "historical", "bike", "adults", "children"]
+  },
+  {
+    "id": 13,
+    "name": "ENEA Poznań City Stadium",
+    "description": "Home stadium of Lech Poznań football club, offering guided tours of the locker rooms and pitch.",
+    "website": "https://stadionpoznan.pl",
+    "duration_outside": 30,
+    "duration_inside": 60,
+    "importance": 65,
+    "categories": ["sport", "modern", "sportsmen", "children", "adults"]
+  },
+  {
+    "id": 14,
+    "name": "New Zoo Poznań (Nowe Zoo)",
+    "description": "Spacious zoological garden set in forested hills with a mini-train for families and children.",
+    "website": "https://zoo.poznan.pl",
+    "duration_outside": 150,
+    "duration_inside": 30,
+    "importance": 62,
+    "categories": ["park", "children", "adults"]
+  },
+  {
+    "id": 15,
+    "name": "Wartostrada Cycling & Walking Route",
+    "description": "Dedicated paved cycling and pedestrian path running alongside the Warta River through scenic parks.",
+    "website": "https://poznan.pl",
+    "duration_outside": 90,
+    "duration_inside": 0,
+    "importance": 60,
+    "categories": ["bike", "sport", "sportsmen", "park", "adults"]
+  }
+]
