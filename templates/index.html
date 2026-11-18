@@ -93,6 +93,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
+                                                <th>Description</th>
                                                 <th>Outside</th>
                                                 <th>Inside</th>
                                                 <th>Categories</th>
@@ -103,6 +104,7 @@
                                             {% for p in all_places %}
                                             <tr>
                                                 <td class="fw-semibold">{{ p.name }}</td>
+                                                <td class="small text-muted">{{ p.description }}</td>
                                                 <td>{{ p.duration_outside }}m</td>
                                                 <td>{{ p.duration_inside }}m</td>
                                                 <td>
