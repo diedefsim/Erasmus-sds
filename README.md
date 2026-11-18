@@ -29,8 +29,8 @@ We'll use a WhatsApp group chat for everyday communication, and video calls for 
 ## Installation manual
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/diedefsim/Erasmus-sds.git
-cd Erasmus-sds
+     git clone https://github.com/diedefsim/Erasmus-sds.git
+    cd Erasmus-sds
    ```
 
 2. **Install required dependencies:**
