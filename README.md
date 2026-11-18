@@ -27,4 +27,27 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
 We'll use a WhatsApp group chat for everyday communication, and video calls for our discussions and working sessions.
 
 ## Installation manual
-To be defined
+1. **Clone the repository:**
+   ```bash
+   git clone <YOUR_GITHUB_REPO_URL>
+   cd <YOUR_REPO_NAME>
+   ```
+
+2. **Install required dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run unit tests (optional verification):**
+   ```bash
+   pytest
+   ```
+
+4. **Start the application server:**
+   ```bash
+   python app.py
+   ```
+
+5. **Open in browser:**
+   Navigate to `http://127.0.0.1:5000` in your web browser.
+
