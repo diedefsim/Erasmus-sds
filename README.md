@@ -1,5 +1,5 @@
 # Erasmus-sds
-The main idea of this project is to develop a Travel Guide, which will be a software application designed to help travelers plan their visits to Poznan according to their interests and preferences. It provides informations about points of interest, such as monuments, museums, parks, and cultural or sports venues, and helps users organize their activities during their trip.
+The main idea of this project is to develop a Travel Guide, which will be a software application designed to help travelers plan their visits to Poznan according to their interests and preferences. It provides informations about points of interest, such as monuments, museums, parks, and cultural or sports venues, and helps users organize their activities during their trip. 
 
 ## Roles and Responsabilities
 - Diego de Francisco (Product Owner) is responsible for:
