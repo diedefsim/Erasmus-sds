@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide - Poznań</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">🌍 Travel Guide — Poznań Visit Planner</span>
+        </div>
+    </nav>
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white fw-bold">Plan Your Visit</div>
+                    <div class="card-body">
+                        {% if error %}
+                            <div class="alert alert-danger">{{ error }}</div>
+                        {% endif %}
+                        <form method="POST" action="/">
+                            <div class="mb-3">
+                                <label for="city" class="form-label fw-semibold">1. Select City</label>
+                                <select class="form-select" id="city" name="city">
+                                    <option value="Poznań" selected>Poznań</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="days" class="form-label fw-semibold">2. Number of Days (1 - 7)</label>
+                                <input type="number" class="form-control" id="days" name="days" min="1" max="7" value="{{ days }}" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 fw-bold">Generate Visiting Plan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                {% if itinerary %}
+                    <h4 class="mb-3">Your {{ days }}-Day Visiting Plan for {{ city }}</h4>
+                    {% for day in itinerary %}
+                        <div class="card mb-4 shadow-sm border-primary">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Day {{ day.day }}</span>
+                                <span class="badge bg-light text-dark">Total visit time: {{ day.total_hours_str }}</span>
+                            </div>
+                            <div class="card-body">
+                                {% if day.places %}
+                                    {% for place in day.places %}
+                                        <div class="border-bottom pb-3 mb-3">
+                                            <h5 class="mb-1">{{ loop.index }}. {{ place.name }}</h5>
+                                            <p class="text-muted mb-2 small">{{ place.description }}</p>
+                                            <div class="d-flex flex-wrap gap-2 align-items-center small">
+                                                <span class="badge bg-secondary">⏱ Outside: {{ place.duration_outside }}m</span>
+                                                <span class="badge bg-secondary">🏛 Inside: {{ place.duration_inside }}m</span>
+                                                {% for cat in place.categories %}
+                                                    <span class="badge bg-info text-dark">{{ cat }}</span>
+                                                {% endfor %}
+                                                <a href="{{ place.website }}" target="_blank" class="ms-auto text-decoration-none">🔗 Official Website</a>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                {% else %}
+                                    <p class="text-muted mb-0">No additional places needed for this day.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="alert alert-info shadow-sm">
+                        <h5>👋 Welcome to the Poznań Travel Guide!</h5>
+                        <p class="mb-0">Select the number of days on the left and click <strong>Generate Visiting Plan</strong> to create your basic itinerary.</p>
+                    </div>
+                {% endif %}
+
+                <div class="accordion mt-4 shadow-sm" id="catalogAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatalog">
+                                📋 View Full Catalog of Poznań Places ({{ all_places|length }} landmarks loaded)
+                            </button>
+                        </h2>
+                        <div id="collapseCatalog" class="accordion-collapse collapse" data-bs-parent="#catalogAccordion">
+                            <div class="accordion-body">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-hover align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Outside</th>
+                                                <th>Inside</th>
+                                                <th>Categories</th>
+                                                <th>Website</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for p in all_places %}
+                                            <tr>
+                                                <td class="fw-semibold">{{ p.name }}</td>
+                                                <td>{{ p.duration_outside }}m</td>
+                                                <td>{{ p.duration_inside }}m</td>
+                                                <td>
+                                                    {% for c in p.categories %}
+                                                        <span class="badge bg-light text-dark border">{{ c }}</span>
+                                                    {% endfor %}
+                                                </td>
+                                                <td><a href="{{ p.website }}" target="_blank">Link</a></td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
