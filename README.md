@@ -22,9 +22,35 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
   - Collaborating with the Product Owner and Scrum Master to refine project requirements and acceptance criteria.
   - Developing and integrating features for points of interest (monuments, museums, parks, cultural, and sports venues).
 
+- Rocío Gómez (Developer) is responsible for:
+  - Designing and maintaining the data model and the catalog of Poznań points of interest (`places.json`).
+  - Verifying the accuracy of place information (descriptions, official websites, visit durations).
+  - Maintaining the project documentation (README, Definition of Done, data model, installation manual).
+  - Implementing and testing the features assigned to her during Sprint Planning.
 
 ## Communication Strategy
 We'll use a WhatsApp group chat for everyday communication, and video calls for our discussions and working sessions.
+
+## Definition of Done
+A Product Backlog Item is done when:
+- All its acceptance criteria are satisfied and can be shown in a live demo.
+- All non-trivial backend methods are unit-tested (`pytest`) and the tests pass automatically in GitHub Actions CI.
+- The maximum response time to generate a visiting plan is under 5 seconds.
+- The code is pushed to the `main` branch and the application runs following the installation manual.
+
+## Data model (`places.json`)
+Each point of interest is stored as one JSON object:
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | integer | Unique identifier of the place |
+| `name` | string | Name of the place |
+| `description` | string | Short description shown to the traveler |
+| `website` | string (URL) | Official or tourist information website |
+| `duration_outside` | integer (minutes) | Time needed to visit the place from the outside |
+| `duration_inside` | integer (minutes) | Time needed to visit the inside (0 if not applicable) |
+| `importance` | integer (0-100) | Priority used to order places in the plan (higher = more important) |
+| `categories` | list of strings | Tags such as `historical`, `modern`, `art`, `culture`, `music`, `sport`, `park`, `bike`, `children`, `adults`, `sportsmen` |
 
 ## Installation manual
 1. **Clone the repository:**
@@ -33,21 +59,27 @@ We'll use a WhatsApp group chat for everyday communication, and video calls for 
     cd Erasmus-sds
    ```
 
-2. **Install required dependencies:**
+2. **Create and activate a virtual environment (recommended):**
+   ```bash
+   python -m venv venv
+   ```
+   - Windows: `venv\Scripts\activate`
+   - macOS / Linux: `source venv/bin/activate`
+
+3. **Install required dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run unit tests (optional verification):**
+4. **Run unit tests (optional verification):**
    ```bash
    pytest
    ```
 
-4. **Start the application server:**
+5. **Start the application server:**
    ```bash
    python app.py
    ```
 
-5. **Open in browser:**
+6. **Open in browser:**
    Navigate to `http://127.0.0.1:5000` in your web browser.
-
