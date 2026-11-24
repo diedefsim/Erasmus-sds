@@ -22,11 +22,11 @@ The main idea of this project is to develop a Travel Guide, which will be a soft
   - Collaborating with the Product Owner and Scrum Master to refine project requirements and acceptance criteria.
   - Developing and integrating features for points of interest (monuments, museums, parks, cultural, and sports venues).
 
-- Rocío Gómez (Developer) is responsible for:
-  - Designing and maintaining the data model and the catalog of Poznań points of interest (`places.json`).
-  - Verifying the accuracy of place information (descriptions, official websites, visit durations).
-  - Maintaining the project documentation (README, Definition of Done, data model, installation manual).
-  - Implementing and testing the features assigned to her during Sprint Planning.
+- Rocío Gómez (Developer – Frontend) is responsible for:
+  - Designing and implementing the user interface (`templates/index.html`): input form, day-by-day plan view and landmarks catalog.
+  - Keeping the interface usable and responsive (Bootstrap).
+  - Implementing the frontend part of each PBI agreed during Sprint Planning (e.g. preference checkboxes, badges, travel mode selector).
+  - Verifying that what is shown on screen matches the acceptance criteria before each Sprint Review.
 
 ## Communication Strategy
 We'll use a WhatsApp group chat for everyday communication, and video calls for our discussions and working sessions.
